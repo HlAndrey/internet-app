@@ -1,13 +1,13 @@
+ 
 import React from 'react';
 import CurrencyTable from './currencytable';
-import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <CurrencyTable />
     </div>
   );
-}
+};
 
 export default App;
