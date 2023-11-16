@@ -1,0 +1,43 @@
+.square:focus {
+  outline: none;
+  border: 1px solid transparent;
+  margin: 0; /* Додаємо цей стиль, щоб забрати відступи */
+}
+
+.square {
+  width: 40px; /* адаптуйте ширину за вашими уподобаннями */
+  height: 40px; /* адаптуйте висоту за вашими уподобаннями */
+}
+.square::-moz-focus-inner {
+  border: 0;
+}
+/* Додайте цей стиль для підкреслення переможця */
+.line {
+  height: 5px;
+  background-color: #000; /* або інший колір за вашим вибором */
+  display: block;
+}
+/* Додайте стилі для модального вікна */
+.winner-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.winner-modal button {
+  padding: 10px;
+  margin-top: 10px;
+}
